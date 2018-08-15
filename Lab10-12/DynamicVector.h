@@ -8,7 +8,6 @@
 
 /**
  * Deprecated
- * @tparam T
  */
 template<typename T> class DynamicVector
 {

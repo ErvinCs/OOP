@@ -1,4 +1,0 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Lab10-12.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  main.cpp
-  Lab10-12.vcxproj -> C:\Users\asus\source\repos\Lab8-9\Debug\Lab8-9.exe
-c:\users\asus\source\repos\lab8-9\lab10-12\database.h(125): warning C26444: Avoid unnamed objects with custom construction and destruction (es.84).

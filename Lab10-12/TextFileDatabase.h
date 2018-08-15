@@ -48,7 +48,8 @@ public:
 
     void display() override
     {
-        std::string command = "notepad.exe C:/_MyFiles/_FMI/Workspace/OOP/Lab8-9/files/dogs.txt";   //"open " + this->getFilename();
+		std::string f = this->getFilename();
+        std::string command = "notepad.exe " + f;  
         system(command.c_str());
     }
 };

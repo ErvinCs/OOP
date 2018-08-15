@@ -52,27 +52,27 @@ public:
      * Get the path fo the file
      * @return: string
      */
-    const std::string &getFilename() const {
-        return filename;
+    const std::string& getFilename() const {
+		return this->filename;
     }
 
     /**
      * Set the path of the file
      * @param filename: string
      */
-    void setFilename(const std::string &filename) {
-        Database::filename = filename;
+    void setFilename(const std::string& filename) {
+        this->filename = filename;
     }
 
     /**
      * @return: vector<T>
      * @throw: RepoException
      */
-    std::vector<T>* getVector()
+    std::vector<T> getVector()	//*
     {
-        if (repo.size() == 0)
-            throw RepoException("Empty repository.\n");
-        return &this->repo;
+        //if (repo.size() == 0)
+        //    throw RepoException("Empty repository.\n");
+        return this->repo;	//&
     }
 
     /**
@@ -82,8 +82,8 @@ public:
      */
     T getItem(const int index) const
     {
-        if (repo.size() == 0)
-            throw RepoException("Empty repository.\n");
+        //if (repo.size() == 0)
+        //    throw RepoException("Empty repository.\n");
         return repo[index];
     }
 
@@ -99,10 +99,11 @@ public:
         {
             repo.push_back(item);
             this->writeFile();
-        } else
+        } 
+		/*else
         {
             throw RepoException("Item already exists!");
-        }
+        }*/
     }
 
     /**
@@ -114,8 +115,8 @@ public:
      */
     bool remove(const int id)
     {
-        if (repo.size() == 0)
-            throw RepoException("Empty repository.\n");
+        //if (repo.size() == 0)
+        //    throw RepoException("Empty repository.\n");
 
         int i = 0;
         for(T item : repo)
@@ -142,8 +143,8 @@ public:
      */
     bool update(const int id, const T elem)
     {
-        if (repo.size() == 0)
-            throw RepoException("Empty repository.\n");
+        //if (repo.size() == 0)
+        //    throw RepoException("Empty repository.\n");
 
         bool isPresent = (std::find(std::begin(repo), std::end(repo), elem) != std::end(repo));
 
@@ -154,16 +155,68 @@ public:
         {
             if (repo[i].getId() == id)
             {
-                repo[i].setAge(elem.getAge());
-                repo[i].setName(elem.getName());
-                repo[i].setPhotoLink(elem.getPhotoLink());
-                repo[i].setBreed(elem.getBreed());
+                repo[i].setAge(repo[i].getAge());
+                repo[i].setName(repo[i].getName());
+                repo[i].setPhotoLink(repo[i].getPhotoLink());
+                repo[i].setBreed(repo[i].getBreed());
             }
         }
 
         this->writeFile();
         return true;
     }
+
+	//
+	void updateName(int pos, const int& id, const std::string& name)
+	{
+		Dog item = this->findById(id);
+		Dog newDog = Dog(item.getBreed(), name, item.getAge(), item.getPhotoLink());
+		newDog.setId(id);
+		this->repo[pos] = newDog;
+	}
+
+	void updateBreed(int pos, const int& id, const std::string& breed)
+	{
+		Dog item = this->findById(id);
+		Dog newDog = Dog(breed, item.getName(), item.getAge(), item.getPhotoLink());
+		newDog.setId(id);
+		this->repo[pos] = newDog;
+	}
+
+	void updateAge(int pos, const int& id, const int& age)
+	{
+		Dog item = this->findById(id);
+		Dog newDog = Dog(item.getBreed(), item.getName(), age, item.getPhotoLink());
+		newDog.setId(id);
+		this->repo[pos] = newDog;
+	}
+
+	void updateLink(int pos, const int& id, const std::string& link)
+	{
+		Dog item = this->findById(id);
+		Dog newDog = Dog(item.getBreed(), item.getName(), item.getAge(), link);
+		newDog.setId(id);
+		this->repo[pos] = newDog;
+	}
+
+	T findById(const int& id)
+	{
+		for (auto item : this->repo)
+			if (item.getId() == id)
+				return item;
+		return T{};
+	}
+
+	int getPosById(const int id)
+	{
+		for (int i = 0; i < this->repo.size(); i++)
+		{
+			if (this->repo[i].getId() == id)
+				return i;
+		}
+		return -1;
+	}
+	//
 
     /**
     * @return: int: the zie of the repository
@@ -223,23 +276,17 @@ public:
 
     virtual void display()
     {
-        std::string command = "notepad.exe C:/_MyFiles/_FMI/Workspace/OOP/Lab8-9/files/dogs.txt";
-        system(command.c_str());
+		this->getCurrent().open();
     }
 
-protected:
+
     /**
      * Read and load in the repo the contents of a file
      */
-    virtual void readFile()// = 0;
+    virtual void readFile()
     {
         std::ifstream file;
         file.open(this->filename, std::ios::in);
-
-        //TODO: file.is_open() == false for some reason
-//        if (!file.is_open())
-//            std::cout << "not open read\n";
-//            throw RepoException("File cannot be opened.\n");
 
         T item;
         while (file.good())
@@ -255,15 +302,10 @@ protected:
     /**
      * Write to a file the contents of the repo
      */
-    virtual void writeFile()// = 0;
+    virtual void writeFile()
     {
         std::ofstream file;
         file.open(this->filename, std::ios::out);
-
-        //TODO: file.is_open() == false for some reason
-//        if (!file.is_open())
-//            std::cout << "not open write\n";
-//            throw RepoException("File cannot be opened.\n");
 
         for (T item : this->repo)
             file << item;

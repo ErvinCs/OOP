@@ -11,7 +11,6 @@
 class UserUI: public UI<Dog>
 {
 private:
-    //Controller<Dog>& con;
     FileController<Dog>& con;
     Database<Dog> dogDb = Database<Dog>();
     bool filterOn = false;
@@ -19,7 +18,6 @@ public:
     std::string breed = "";
     int age = -1;
 
-    //explicit UserUI(Controller<Dog>& c) : con(c) {}
     explicit UserUI(FileController<Dog>& c) : con(c) {}
     
     void next();

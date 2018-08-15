@@ -14,12 +14,9 @@ class HtmlFileDatabase : public Database<T>
 {
 public:
     HtmlFileDatabase() noexcept {};
-    explicit HtmlFileDatabase(const Database<T>& other) : Database<T>(other)
-    {}
-    explicit HtmlFileDatabase(const std::string& filename) : Database<T>(filename)
-    {
-        this->readFile();
-    }
+    explicit HtmlFileDatabase(const Database<T>& other) : Database<T>(other) {}
+
+    explicit HtmlFileDatabase(const std::string& filename) : Database<T>(filename) { this->readFile(); }
 
     void readFile() override
     {
@@ -36,31 +33,26 @@ public:
             Dog item = Dog();
 
             std::getline(file, temp);
-			//std::cout << "temp1=" << temp << "\n";
             item.setName(temp);
 
             for(int i = 0; i < 2; i++)
                 std::getline(file, temp);
             std::getline(file, temp);
-			//std::cout << "temp2=" << temp << "\n";
             item.setBreed(temp);
 
             for(int i = 0; i < 2; i++)
                 std::getline(file, temp);
             std::getline(file, temp);
-			//std::cout << "temp3=" << temp << "\n";
             item.setAge(std::stoi(temp));
 
             for(int i = 0; i < 3; i++)
                 std::getline(file, temp);
             std::getline(file, temp);
-			//std::cout << "temp4=" << temp << "\n";
             item.setPhotoLink(temp);
 
             for(int i = 0; i < 3; i++)
                 std::getline(file, temp);
             std::getline(file, temp);
-			//std::cout << "temp5=" << temp << "\n";
             item.setId(std::stoi(temp));
             idGen++;
 
@@ -110,8 +102,10 @@ public:
 
     void display() override
     {
-        ShellExecuteA(nullptr, "open", "C:/Users/asus/source/repos/Lab8-9/dogs.html", nullptr, nullptr, SW_SHOWMAXIMIZED);
-    }
+		std::string f = this->getFilename();
+		std::string command = "firefox.exe " + f; 
+		system(command.c_str());
+	}
 };
 
 #endif //_HTMLFILEDATABASE_H

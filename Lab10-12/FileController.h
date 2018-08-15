@@ -27,6 +27,11 @@ public:
         return repo->getSize();
     }
 
+	std::vector<T> getAll()
+	{
+		return this->repo->getVector();
+	}
+
     void add(const T& dog)
     {
         try {

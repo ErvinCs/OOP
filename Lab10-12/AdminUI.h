@@ -13,10 +13,8 @@
 class AdminUI: public UI<Dog>
 {
 public:
-    //Controller<Dog>& con;
     FileController<Dog>& con;
 public:
-    //explicit AdminUI(Controller<Dog>& c) : con(c) {}
     explicit AdminUI(FileController<Dog>& c) : con(c) {}
 
     void add();
