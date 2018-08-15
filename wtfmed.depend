@@ -1,0 +1,293 @@
+# depslib dependency file v1.0
+1521452534 source:c:\users\asus\desktop\wtfmed\main.c
+	<stdio.h>
+	<stdlib.h>
+	"TextUI.h"
+	"MedController.h"
+	"MedRepo.h"
+	"Medication.h"
+
+1521452534 c:\users\asus\desktop\wtfmed\textui.h
+	"MedController.h"
+
+1521584160 c:\users\asus\desktop\wtfmed\medcontroller.h
+	"Medication.h"
+	"MedRepo.h"
+	"Actions.h"
+
+1521458931 c:\users\asus\desktop\wtfmed\medication.h
+
+1521584160 c:\users\asus\desktop\wtfmed\medrepo.h
+	"Medication.h"
+
+1521580493 source:c:\users\asus\desktop\wtfmed\medication.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Medication.h"
+
+1521580508 source:c:\users\asus\desktop\wtfmed\medrepo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"MedRepo.h"
+
+1521580450 source:c:\users\asus\desktop\wtfmed\medcontroller.c
+	<stdio.h>
+	<stdlib.h>
+	"MedRepo.h"
+	"MedController.h"
+
+1521453575 source:c:\users\asus\desktop\wtfmed\textui.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"TextUI.h"
+	"MedRepo.h"
+	"MedController.h"
+	"Medication.h"
+
+1521583428 source:c:\users\asus\desktop\wtfmed\actions.c
+	"Actions.h"
+	<string.h>
+	<stdlib.h>
+
+1521583061 c:\users\asus\desktop\wtfmed\actions.h
+	"Medication.h"
+	<string.h>
+
+1521618168 source:c:\users\asus\desktop\lab3\actions.c
+	"Actions.h"
+	<string.h>
+	<stdlib.h>
+
+1521617464 c:\users\asus\desktop\lab3\actions.h
+	"Medication.h"
+	<string.h>
+
+1521614569 c:\users\asus\desktop\lab3\medication.h
+
+1521617687 source:c:\users\asus\desktop\lab3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"TextUI.h"
+	"MedController.h"
+	"MedRepo.h"
+	"Medication.h"
+
+1521614523 c:\users\asus\desktop\lab3\textui.h
+	"MedController.h"
+
+1521616821 c:\users\asus\desktop\lab3\medcontroller.h
+	"Medication.h"
+	"MedRepo.h"
+	"Actions.h"
+
+1521614523 c:\users\asus\desktop\lab3\medrepo.h
+	"Medication.h"
+
+1521617292 source:c:\users\asus\desktop\lab3\medication.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Medication.h"
+
+1521615563 source:c:\users\asus\desktop\lab3\medrepo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"MedRepo.h"
+
+1521617717 source:c:\users\asus\desktop\lab3\textui.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"TextUI.h"
+	"MedRepo.h"
+	"MedController.h"
+	"Medication.h"
+
+1521618168 source:c:\users\asus\desktop\lab3\medcontroller.c
+	<stdio.h>
+	<stdlib.h>
+	"MedRepo.h"
+	"MedController.h"
+	"Actions.h"
+
+1522581798 source:c:\users\asus\desktop\lab32\actions.c
+	"Actions.h"
+	<string.h>
+	<stdlib.h>
+
+1522527873 c:\users\asus\desktop\lab32\actions.h
+	"Medication.h"
+	<string.h>
+
+1521618169 c:\users\asus\desktop\lab32\medication.h
+
+1522581337 source:c:\users\asus\desktop\lab32\main.c
+	<stdio.h>
+	<stdlib.h>
+	"TextUI.h"
+	"MedController.h"
+	"MedRepo.h"
+	"Medication.h"
+	"Actions.h"
+
+1521618123 c:\users\asus\desktop\lab32\textui.h
+	"MedController.h"
+
+1522750328 c:\users\asus\desktop\lab32\medcontroller.h
+	"Medication.h"
+	"MedRepo.h"
+	"Actions.h"
+
+1522603729 c:\users\asus\desktop\lab32\medrepo.h
+	"Medication.h"
+
+1521620892 source:c:\users\asus\desktop\lab32\medication.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Medication.h"
+
+1522604281 source:c:\users\asus\desktop\lab32\medrepo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"MedRepo.h"
+
+1522750328 source:c:\users\asus\desktop\lab32\textui.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"TextUI.h"
+	"MedRepo.h"
+	"MedController.h"
+	"Medication.h"
+
+1522751167 source:c:\users\asus\desktop\lab32\medcontroller.c
+	<stdio.h>
+	<stdlib.h>
+	"MedRepo.h"
+	"MedController.h"
+	"Actions.h"
+
+1522581798 source:c:\users\asus\desktop\new folder (2)\lab32\actions.c
+	"Actions.h"
+	<string.h>
+	<stdlib.h>
+
+1522527873 c:\users\asus\desktop\new folder (2)\lab32\actions.h
+	"Medication.h"
+	<string.h>
+
+1521618169 c:\users\asus\desktop\new folder (2)\lab32\medication.h
+
+1522581337 source:c:\users\asus\desktop\new folder (2)\lab32\main.c
+	<stdio.h>
+	<stdlib.h>
+	"TextUI.h"
+	"MedController.h"
+	"MedRepo.h"
+	"Medication.h"
+	"Actions.h"
+
+1521618123 c:\users\asus\desktop\new folder (2)\lab32\textui.h
+	"MedController.h"
+
+1522781184 c:\users\asus\desktop\new folder (2)\lab32\medcontroller.h
+	"Medication.h"
+	"MedRepo.h"
+	"Actions.h"
+
+1522603729 c:\users\asus\desktop\new folder (2)\lab32\medrepo.h
+	"Medication.h"
+
+1521620892 source:c:\users\asus\desktop\new folder (2)\lab32\medication.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Medication.h"
+
+1522604281 source:c:\users\asus\desktop\new folder (2)\lab32\medrepo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"MedRepo.h"
+
+1522750328 source:c:\users\asus\desktop\new folder (2)\lab32\textui.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"TextUI.h"
+	"MedRepo.h"
+	"MedController.h"
+	"Medication.h"
+
+1522788012 source:c:\users\asus\desktop\new folder (2)\lab32\medcontroller.c
+	<stdio.h>
+	<stdlib.h>
+	"MedRepo.h"
+	"MedController.h"
+	"Actions.h"
+
+1522581798 source:c:\_myfiles\_fmi\workspace\oop\lab4\actions.c
+	"Actions.h"
+	<string.h>
+	<stdlib.h>
+
+1522527873 c:\_myfiles\_fmi\workspace\oop\lab4\actions.h
+	"Medication.h"
+	<string.h>
+
+1522788404 c:\_myfiles\_fmi\workspace\oop\lab4\medication.h
+
+1522581337 source:c:\_myfiles\_fmi\workspace\oop\lab4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"TextUI.h"
+	"MedController.h"
+	"MedRepo.h"
+	"Medication.h"
+	"Actions.h"
+
+1521618123 c:\_myfiles\_fmi\workspace\oop\lab4\textui.h
+	"MedController.h"
+
+1522781184 c:\_myfiles\_fmi\workspace\oop\lab4\medcontroller.h
+	"Medication.h"
+	"MedRepo.h"
+	"Actions.h"
+
+1522603729 c:\_myfiles\_fmi\workspace\oop\lab4\medrepo.h
+	"Medication.h"
+
+1521620892 source:c:\_myfiles\_fmi\workspace\oop\lab4\medication.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Medication.h"
+
+1522604281 source:c:\_myfiles\_fmi\workspace\oop\lab4\medrepo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"MedRepo.h"
+
+1522788371 source:c:\_myfiles\_fmi\workspace\oop\lab4\medcontroller.c
+	<stdio.h>
+	<stdlib.h>
+	"MedRepo.h"
+	"MedController.h"
+	"Actions.h"
+
+1522788371 source:c:\_myfiles\_fmi\workspace\oop\lab4\textui.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"TextUI.h"
+	"MedRepo.h"
+	"MedController.h"
+	"Medication.h"
+
