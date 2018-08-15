@@ -1,0 +1,9 @@
+robot,cop,100,https://goo.gl/images/GZ4gQB,47
+Dog,Dog2,2,https://www.petfinder.com/dog/koda-41405326/ak/fairbanks/fairbanks-north-star-borough-animal-control-ak12/,51
+Rat,Dog3,7,https://www.petfinder.com/small-furry/laura-41350455/ak/fairbanks/fairbanks-north-star-borough-animal-control-ak12/,52
+Underdog,Dog4,4,https://www.petfinder.com/dog/rascal-40920804/ak/fairbanks/homeward-bound-pet-rescue-and-referral-ak29/,53
+Dog,Dog5,9,https://www.petfinder.com/dog/johnny-37944012/ak/fairbanks/homeward-bound-pet-rescue-and-referral-ak29/,54
+Underdog,Dog6,6,https://www.petfinder.com/dog/breeze-41370250/ak/fairbanks/fairbanks-north-star-borough-animal-control-ak12/,55
+Pig,Timmy the Dog,2,https://bestfriends.org/adopt/adopt-our-sanctuary/12155513/timmy,57
+Cat,Myron,3,https://bestfriends.org/adopt/adopt-our-sanctuary/12802404/myron,58
+new,1,1,newlink,59
